@@ -1,0 +1,1 @@
+# bakdauletbolat.github.io
