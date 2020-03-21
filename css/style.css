@@ -1,0 +1,129 @@
+body{
+	margin: 20px 0px 0px 0px;
+
+	font-family: 'Play', sans-serif;
+
+}
+h3,h1,h2,li,ul{
+	margin: 0;
+	padding: 0;
+}
+.menu{
+	position: relative;
+	height: 70px;
+		background-color: #E66A39;
+		
+}
+.container{
+	
+	max-width: 1200px;
+	margin:0 auto;
+	background-color: #353C3E;
+}
+.menu_list{
+	border-right:2px white solid;
+	position: relative;
+	background-color: #E66A39;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	transition: 0.3s ease;
+}
+.menu_list:hover{
+	background-color: #D04E33;
+}
+.nav-panel{
+	display: grid;
+	grid-template-columns: 1fr 5fr 2fr;
+}
+.menu_lists{
+	height: 100%;
+	width: 100%;
+	
+	display: grid;
+	position: absolute;
+	color:#EEEEEE;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.menu_lists li {
+	list-style: none;
+}
+.menu_lists li a{
+	color:#EEEEEE;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.logo{
+	background-color: #D04E33;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	color: #EEEEEE;
+}
+.button{
+	display: grid;
+}
+.content{
+	display: grid;
+	grid-template-columns:1fr 5fr 2fr;
+}
+.block-poema{
+	display: grid;
+	padding: 20px;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 30px;
+	justify-content: center;
+	perspective: 1500px;
+}
+.poema{
+	background-image:url(../img/textuepage.jpg);
+	padding: 20px;
+	display: grid;
+	color:#1C2021;
+	justify-content: center;
+
+	border-radius: 3px;
+	transform: rotateY(0deg);
+	transform: scale(1);
+	transition: all 0.5s ease;
+	z-index: 1;
+}
+/*.poema:hover{
+	transform: rotateY(-10deg)	scale(1.1);
+	z-index: 4;
+	
+}*/
+.poema-active{
+	transform: rotateY(0deg)	scale(1.5);
+	transition: 0.3s;
+	z-index: 4;
+	
+}
+.author{
+	background-color: #1C2021;
+	color:#eeeeee;
+	padding:0 20px 0 20px;
+	border: 2px #EEEEEE solid;
+	border-radius: 5px;
+}
+
+.block-sidebar{
+}
+@media screen and (max-width: 1000px) {
+.content{
+	grid-template-columns:1fr 3fr;
+}
+}
+@media screen and (max-width: 800px) {
+	.block-poema{
+	padding: 5px;
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
+}
+.content{
+	grid-template-columns:1fr;
+}
+}
+
+#E66A39, #D04E33,#353C3E,#1C2021#EEEEEE
